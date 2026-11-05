@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "realism:hardened_pickaxe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "HHH",
+      " S ",
+      " S "
+    ],
+    "key": {
+      "H": { "item": "realism:hardened_iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "realism:hardened_pickaxe",
+      "count": 1
+    }
+  }
+}

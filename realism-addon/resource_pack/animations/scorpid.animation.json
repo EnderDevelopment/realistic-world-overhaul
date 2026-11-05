@@ -1,0 +1,54 @@
+{
+  "format_version": "1.8.0",
+  "animations": {
+    "animation.realism.scorpid.walk": {
+      "loop": true,
+      "animation_length": 1.0,
+      "bones": {
+        "leg_left_1": {
+          "rotation": {
+            "0.0": [0, 0, 45],
+            "0.5": [0, 0, -45],
+            "1.0": [0, 0, 45]
+          }
+        },
+        "leg_right_1": {
+          "rotation": {
+            "0.0": [0, 0, -45],
+            "0.5": [0, 0, 45],
+            "1.0": [0, 0, -45]
+          }
+        },
+        "leg_left_2": {
+          "rotation": {
+            "0.0": [0, 0, -45],
+            "0.5": [0, 0, 45],
+            "1.0": [0, 0, -45]
+          }
+        },
+        "leg_right_2": {
+          "rotation": {
+            "0.0": [0, 0, 45],
+            "0.5": [0, 0, -45],
+            "1.0": [0, 0, 45]
+          }
+        },
+        "tail": {
+          "rotation": {
+            "0.0": [0, 0, 10],
+            "0.5": [0, 0, -10],
+            "1.0": [0, 0, 10]
+          }
+        }
+      }
+    },
+    "animation.realism.scorpid.look_at_target": {
+      "loop": true,
+      "bones": {
+        "head": {
+          "rotation": [ "query.target_x_rotation * 0.6", "query.target_y_rotation * 0.6", 0 ]
+        }
+      }
+    }
+  }
+}

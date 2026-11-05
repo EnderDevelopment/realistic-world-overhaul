@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "realism:hardened_hoe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "HH",
+      " S",
+      " S"
+    ],
+    "key": {
+      "H": { "item": "realism:hardened_iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "realism:hardened_hoe",
+      "count": 1
+    }
+  }
+}

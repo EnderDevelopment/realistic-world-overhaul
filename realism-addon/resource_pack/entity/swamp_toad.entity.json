@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "realism:swamp_toad",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/swamp_toad" },
+      "geometry": { "default": "geometry.realism.swamp_toad" },
+      "animations": {
+        "jump": "animation.realism.swamp_toad.jump",
+        "look_at_target": "animation.realism.swamp_toad.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          { "jump": "query.is_jumping || query.is_moving" },
+          "look_at_target"
+        ]
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.realism.swamp_toad" }
+      ],
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": {
+        "base_color": "#5E7D3A",
+        "overlay_color": "#2E4A1C"
+      }
+    }
+  }
+}

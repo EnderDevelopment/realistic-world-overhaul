@@ -1,0 +1,22 @@
+{
+  "format_version": "1.10.0",
+  "animation_controllers": {
+    "controller.animation.realism.snow_wolf": {
+      "initial_state": "calm",
+      "states": {
+        "calm": {
+          "animations": [ "walk" ],
+          "transitions": [
+            { "run": "query.is_sprinting" }
+          ]
+        },
+        "run": {
+          "animations": [ "run" ],
+          "transitions": [
+            { "calm": "!query.is_sprinting" }
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resource_pack_name": "Realism Pack (Resources)",
+  "texture_name": "atlas.items",
+  "texture_data": {
+    "hardened_iron_ingot": {
+      "textures": "textures/items/hardened_iron_ingot"
+    },
+    "obsidian_shard": {
+      "textures": "textures/items/obsidian_shard"
+    },
+    "hardened_sword": {
+      "textures": "textures/items/hardened_sword"
+    },
+    "hardened_pickaxe": {
+      "textures": "textures/items/hardened_pickaxe"
+    },
+    "hardened_axe": {
+      "textures": "textures/items/hardened_axe"
+    },
+    "hardened_shovel": {
+      "textures": "textures/items/hardened_shovel"
+    },
+    "hardened_hoe": {
+      "textures": "textures/items/hardened_hoe"
+    },
+    "obsidian_tipped_sword": {
+      "textures": "textures/items/obsidian_tipped_sword"
+    }
+  }
+}

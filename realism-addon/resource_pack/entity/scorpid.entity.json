@@ -1,0 +1,32 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "realism:scorpid",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/scorpid" },
+      "geometry": { "default": "geometry.realism.scorpid" },
+      "animations": {
+        "walk": "animation.realism.scorpid.walk",
+        "look_at_target": "animation.realism.scorpid.look_at_target"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.leg_phase = query.mod(query.anim_time, 2.0) * 180;"
+        ],
+        "animate": [
+          { "walk": "query.is_moving" },
+          "look_at_target"
+        ]
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.realism.scorpid" }
+      ],
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": {
+        "base_color": "#3B2A1E",
+        "overlay_color": "#7A4E2D"
+      }
+    }
+  }
+}

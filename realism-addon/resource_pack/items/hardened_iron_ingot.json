@@ -1,0 +1,14 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "realism:hardened_iron_ingot",
+      "category": "items"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "hardened_iron_ingot"
+      }
+    }
+  }
+}

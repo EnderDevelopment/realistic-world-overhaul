@@ -1,0 +1,36 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:item": {
+    "description": {
+      "identifier": "realism:hardened_sword",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "hardened_sword"
+      },
+      "minecraft:display_name": {
+        "value": "Hardened Sword"
+      },
+      "minecraft:max_stack_size": 1,
+      "minecraft:hand_equipped": true,
+      "minecraft:durability": {
+        "max_durability": 1200
+      },
+      "minecraft:damage": 8,
+      "minecraft:enchantable": {
+        "value": 22,
+        "slot": "sword"
+      },
+      "minecraft:can_destroy_in_creative": false,
+      "minecraft:weapon": {
+        "on_hurt_entity": {
+          "event": "realism:hardened_hit"
+        }
+      }
+    },
+    "events": {
+      "realism:hardened_hit": {}
+    }
+  }
+}

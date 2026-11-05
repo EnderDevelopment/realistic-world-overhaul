@@ -1,0 +1,15 @@
+{
+  "format_version": "1.16.100",
+  "minecraft:item": {
+    "description": {
+      "identifier": "realism:hardened_hoe",
+      "category": "equipment"
+    },
+    "components": {
+      "minecraft:icon": {
+        "texture": "hardened_hoe"
+      },
+      "minecraft:hand_equipped": true
+    }
+  }
+}

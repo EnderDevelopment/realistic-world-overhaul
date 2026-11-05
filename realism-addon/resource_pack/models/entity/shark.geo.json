@@ -1,0 +1,45 @@
+{
+  "format_version": "1.12.0",
+  "minecraft:geometry": [
+    {
+      "description": {
+        "identifier": "geometry.realism.shark",
+        "texture_width": 64,
+        "texture_height": 64,
+        "visible_bounds_width": 3,
+        "visible_bounds_height": 3,
+        "visible_bounds_offset": [0, 1, 0]
+      },
+      "bones": [
+        {
+          "name": "body",
+          "pivot": [0, 8, 0],
+          "cubes": [
+            { "origin": [-2, 6, -8], "size": [4, 4, 16], "uv": [0, 0] }
+          ]
+        },
+        {
+          "name": "head",
+          "pivot": [0, 8, -8],
+          "cubes": [
+            { "origin": [-3, 6, -12], "size": [6, 3, 5], "uv": [0, 20] }
+          ]
+        },
+        {
+          "name": "tail",
+          "pivot": [0, 8, 8],
+          "cubes": [
+            { "origin": [-1, 6, 8], "size": [2, 3, 3], "uv": [24, 0] }
+          ]
+        },
+        {
+          "name": "fin_dorsal",
+          "pivot": [0, 9, -1],
+          "cubes": [
+            { "origin": [-1, 9, -2], "size": [2, 3, 1], "uv": [30, 0] }
+          ]
+        }
+      ]
+    }
+  ]
+}

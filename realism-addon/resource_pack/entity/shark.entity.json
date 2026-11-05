@@ -1,0 +1,29 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "realism:shark",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/shark" },
+      "geometry": { "default": "geometry.realism.shark" },
+      "animations": {
+        "swim": "animation.realism.shark.swim",
+        "look_at_target": "animation.realism.shark.look_at_target"
+      },
+      "scripts": {
+        "animate": [
+          { "swim": "query.is_in_water || query.is_moving" },
+          "look_at_target"
+        ]
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.realism.shark" }
+      ],
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": {
+        "base_color": "#5B7C99",
+        "overlay_color": "#D8E4EC"
+      }
+    }
+  }
+}

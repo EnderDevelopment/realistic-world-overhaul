@@ -1,0 +1,31 @@
+{
+  "format_version": 2,
+  "header": {
+    "name": "Realism Pack (Behavior)",
+    "description": "Brings realistic tools, water physics, mobs, animations and biome spawning to Bedrock & Education Edition.",
+    "uuid": "0e21f5a8-3c7d-4a9b-9f1e-5b6d1c8a2e44",
+    "version": [1, 0, 0],
+    "min_engine_version": [1, 20, 0]
+  },
+  "modules": [
+    {
+      "type": "data",
+      "uuid": "1f32a6b9-4d8e-4b0c-8a2f-6c7e2d9b3f55",
+      "version": [1, 0, 0]
+    },
+    {
+      "type": "script",
+      "language": "javascript",
+      "uuid": "2a43b7c0-5e9f-4c1d-9b30-7d8f3e0c4066",
+      "version": [1, 0, 0],
+      "entry": "scripts/main.js"
+    }
+  ],
+  "dependencies": [
+    {
+      "module_name": "@minecraft/server",
+      "version": "1.8.0"
+    }
+  ],
+  "capabilities": ["script_eval"]
+}

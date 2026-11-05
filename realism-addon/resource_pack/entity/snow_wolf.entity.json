@@ -1,0 +1,34 @@
+{
+  "format_version": "1.10.0",
+  "minecraft:client_entity": {
+    "description": {
+      "identifier": "realism:snow_wolf",
+      "materials": { "default": "entity_alphatest" },
+      "textures": { "default": "textures/entity/snow_wolf" },
+      "geometry": { "default": "geometry.realism.snow_wolf" },
+      "animations": {
+        "walk": "animation.realism.snow_wolf.walk",
+        "run": "animation.realism.snow_wolf.run",
+        "look_at_target": "animation.realism.snow_wolf.look_at_target"
+      },
+      "scripts": {
+        "pre_animation": [
+          "variable.leg_phase = query.mod(query.anim_time, 2.0) * 180;"
+        ],
+        "animate": [
+          { "walk": "query.is_moving && !query.is_sprinting" },
+          { "run": "query.is_moving && query.is_sprinting" },
+          "look_at_target"
+        ]
+      },
+      "animation_controllers": [
+        { "general": "controller.animation.realism.snow_wolf" }
+      ],
+      "render_controllers": ["controller.render.default"],
+      "spawn_egg": {
+        "base_color": "#E8E8E8",
+        "overlay_color": "#9AA5AD"
+      }
+    }
+  }
+}

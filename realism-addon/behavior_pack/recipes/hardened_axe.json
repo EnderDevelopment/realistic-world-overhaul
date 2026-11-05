@@ -1,0 +1,22 @@
+{
+  "format_version": "1.21.0",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "realism:hardened_axe"
+    },
+    "tags": ["crafting_table"],
+    "pattern": [
+      "HH",
+      "HS",
+      " S"
+    ],
+    "key": {
+      "H": { "item": "realism:hardened_iron_ingot" },
+      "S": { "item": "minecraft:stick" }
+    },
+    "result": {
+      "item": "realism:hardened_axe",
+      "count": 1
+    }
+  }
+}
